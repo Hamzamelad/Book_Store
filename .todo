@@ -1,0 +1,35 @@
+normal app:
+    auth sys:
+        - normal login with allauth @done
+        - social login with allauth @done
+        - password management @done
+        - email managment (+login whit email) @done
+        - 
+        authorization sys:
+            - make perms usefull @done
+            - add a group (atless) @done
+    
+    database management:
+        - design the tables @done
+        - manage media-type conten @done
+        - add & manage django-filters @done
+
+------------------
+
+restfull app:
+    auth sys:
+        - normal login with dj-rest-auth @done
+        - login with jwt @done
+        - social login with dj-rest-auth[allauth] @done
+        - password management @done
+        - email managment (+login with email) @done
+
+        authorization sys:
+            - make perms usefull with rest @done
+    
+    database management:
+        - create serializers
+        - add & manage django-filters for apis
+
+
+    

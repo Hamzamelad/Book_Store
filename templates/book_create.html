@@ -1,0 +1,13 @@
+{% extends '_base.html' %}
+
+{% block title %}
+    book create
+{% endblock title %}    
+
+{% block content %}
+<!--multipart/form-data: allows entire files to be included in the data.  -->
+<form method="post" enctype="multipart/form-data">{% csrf_token %} 
+    {{form.as_p}}
+    <button type="sumbit">puplish</button>
+</form>
+{% endblock content %}

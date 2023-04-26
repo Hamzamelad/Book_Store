@@ -1,0 +1,18 @@
+<header
+    style="display: flex; align-items: baseline; justify-content: space-between;padding: 0 10px; border-bottom: solid 1px black; font-size: x-large;">
+    <a href="{% url 'books_list' %}">
+        <span>BookStore</span>
+    </a>
+    <ul style="width: 40%; display: flex; justify-content: space-around; list-style-type: none;">
+        <li style="margin-left: 15px;">
+            <a href="#">about</a>
+        </li>
+        <li style="margin-left: 15px;">
+            <a href="{% url 'books_search' %}">search</a>
+        </li>
+        <li style="margin-left: 15px;">
+            <a href="{% url 'book_puplish' %}">puplish</a>
+        </li>
+    </ul>
+    <a href="{% url 'account_logout' %}">logout</a>
+</header>

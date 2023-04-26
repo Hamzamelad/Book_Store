@@ -1,0 +1,27 @@
+{% url 'book_details' book.id as url %}
+<!-- <a href="{{url}}"> -->
+    <div class="carda" onclick="location.href='{{url}}';">
+        <div class="carda-head">
+            <div class="carda-title">
+                {{book.title}}
+            </div>
+        </div>
+        <div class="carda-con">
+            <div class="img-con">
+                <div class="cen-img">
+                    <img src="{{ book.cover.url }}" class="imga" alt="img">
+                </div>
+            </div>
+            <div class="info-con">
+                <p id="dis" class="">
+                    {{book.dis}}
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="author-date">by {{book.author}} | in {{book.pup_date}}</div>
+            <div class="carda-rate"></div>
+        </div>
+    </div>
+<!-- </a> -->
+

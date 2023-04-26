@@ -1,0 +1,93 @@
+.parentee {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+    color: brown;
+}
+
+.carda {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #daddda;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 14px;
+}
+
+.carda-head {
+    width: 100%;
+    flex: 2;
+    display: flex;
+}
+.carda-title {
+    flex: 1;
+}
+
+.carda-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 7;
+}
+.img-con {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.cen-img {
+    height: 100%;
+    flex: 1;
+    display: flex;
+}
+.imga {
+    width: 100%;
+    height: 100%;
+}
+.info-con {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+
+.footer {
+    flex: 1;
+    display: flex;
+}
+.author-date {
+    flex: 3;
+}
+.carda-rate {
+    flex: 2;
+}
+
+/* details section */
+
+.containera {
+    width: 100%;
+    display: flex;
+    background-color: #cfcbcb;
+}
+.cover {
+    flex: 1;
+    height: 200px;
+    display: flex;
+    background-color: #b9e443;
+}
+
+.main {
+    flex: 2;
+    background-color: #6b6868;
+}
+.rate {
+    width: 100%;
+    background-color: #fff;
+
+}

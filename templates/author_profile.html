@@ -1,0 +1,21 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %}
+   author profile 
+{% endblock title %}
+    
+{% block content %}
+<p>name: {{author.first_name}} {{author.last_name}}</p>
+<p>nationality: {{author.nationality}}</p>
+<p>age: {{author.age}}</p>
+<br>
+<h5>author books</h5>
+<ul>
+    {% for book in author.books.all %}
+        {% url 'book_details' book.id as url %}
+        <li><a href="{{url}}">{{book.title}}</a></li>
+    {% endfor %}
+</ul>
+{% endblock content %}
+    
